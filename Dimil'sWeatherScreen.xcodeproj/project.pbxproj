@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8BAA0FF01BFA193A00D5790F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA0FEF1BFA193A00D5790F /* main.m */; };
+		8BAA0FF31BFA193A00D5790F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA0FF21BFA193A00D5790F /* AppDelegate.m */; };
+		8BAA0FF61BFA193A00D5790F /* Dimil_sWeatherScreen.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA0FF41BFA193A00D5790F /* Dimil_sWeatherScreen.xcdatamodeld */; };
+		8BAA0FF91BFA193A00D5790F /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA0FF81BFA193A00D5790F /* WeatherViewController.m */; };
+		8BAA0FFC1BFA193A00D5790F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BAA0FFA1BFA193A00D5790F /* Main.storyboard */; };
+		8BAA0FFE1BFA193A00D5790F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BAA0FFD1BFA193A00D5790F /* Images.xcassets */; };
+		8BAA10011BFA193B00D5790F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BAA0FFF1BFA193B00D5790F /* LaunchScreen.xib */; };
+		8BAA100D1BFA193B00D5790F /* Dimil_sWeatherScreenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA100C1BFA193B00D5790F /* Dimil_sWeatherScreenTests.m */; };
+		8BAA10181BFA1D2100D5790F /* WeatherCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA10171BFA1D2100D5790F /* WeatherCollectionViewCell.m */; };
+		8BAA101E1BFA315400D5790F /* ImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA101B1BFA315400D5790F /* ImageDownloader.m */; };
+		8BAA101F1BFA315400D5790F /* ImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA101D1BFA315400D5790F /* ImageCache.m */; };
+		8BAA10221BFA395C00D5790F /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BAA10211BFA395C00D5790F /* cloud.png */; };
+		8BAA10261BFA422100D5790F /* WeatherData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA10251BFA422100D5790F /* WeatherData.m */; };
+		8BAA10291BFA431300D5790F /* WeatherDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA10281BFA431300D5790F /* WeatherDataBase.m */; };
+		8BAA102C1BFAEA6500D5790F /* NSString+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA102B1BFAEA6500D5790F /* NSString+Formatter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BAA10071BFA193B00D5790F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BAA0FE21BFA193A00D5790F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BAA0FE91BFA193A00D5790F;
+			remoteInfo = "Dimil'sWeatherScreen";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8BAA0FEA1BFA193A00D5790F /* Dimil'sWeatherScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dimil'sWeatherScreen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BAA0FEE1BFA193A00D5790F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BAA0FEF1BFA193A00D5790F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8BAA0FF11BFA193A00D5790F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8BAA0FF21BFA193A00D5790F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8BAA0FF51BFA193A00D5790F /* Dimil_sWeatherScreen.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dimil_sWeatherScreen.xcdatamodel; sourceTree = "<group>"; };
+		8BAA0FF71BFA193A00D5790F /* WeatherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherViewController.h; sourceTree = "<group>"; };
+		8BAA0FF81BFA193A00D5790F /* WeatherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherViewController.m; sourceTree = "<group>"; };
+		8BAA0FFB1BFA193A00D5790F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BAA0FFD1BFA193A00D5790F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8BAA10001BFA193B00D5790F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8BAA10061BFA193B00D5790F /* Dimil'sWeatherScreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dimil'sWeatherScreenTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BAA100B1BFA193B00D5790F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BAA100C1BFA193B00D5790F /* Dimil_sWeatherScreenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dimil_sWeatherScreenTests.m; sourceTree = "<group>"; };
+		8BAA10161BFA1D2100D5790F /* WeatherCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherCollectionViewCell.h; sourceTree = "<group>"; };
+		8BAA10171BFA1D2100D5790F /* WeatherCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherCollectionViewCell.m; sourceTree = "<group>"; };
+		8BAA101A1BFA315400D5790F /* ImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloader.h; sourceTree = "<group>"; };
+		8BAA101B1BFA315400D5790F /* ImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownloader.m; sourceTree = "<group>"; };
+		8BAA101C1BFA315400D5790F /* ImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCache.h; sourceTree = "<group>"; };
+		8BAA101D1BFA315400D5790F /* ImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCache.m; sourceTree = "<group>"; };
+		8BAA10211BFA395C00D5790F /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
+		8BAA10241BFA422100D5790F /* WeatherData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherData.h; sourceTree = "<group>"; };
+		8BAA10251BFA422100D5790F /* WeatherData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherData.m; sourceTree = "<group>"; };
+		8BAA10271BFA431300D5790F /* WeatherDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherDataBase.h; sourceTree = "<group>"; };
+		8BAA10281BFA431300D5790F /* WeatherDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherDataBase.m; sourceTree = "<group>"; };
+		8BAA102A1BFAEA6500D5790F /* NSString+Formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Formatter.h"; sourceTree = "<group>"; };
+		8BAA102B1BFAEA6500D5790F /* NSString+Formatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Formatter.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BAA0FE71BFA193A00D5790F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BAA10031BFA193B00D5790F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BAA0FE11BFA193A00D5790F = {
+			isa = PBXGroup;
+			children = (
+				8BAA0FEC1BFA193A00D5790F /* Dimil'sWeatherScreen */,
+				8BAA10091BFA193B00D5790F /* Dimil'sWeatherScreenTests */,
+				8BAA0FEB1BFA193A00D5790F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BAA0FEB1BFA193A00D5790F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BAA0FEA1BFA193A00D5790F /* Dimil'sWeatherScreen.app */,
+				8BAA10061BFA193B00D5790F /* Dimil'sWeatherScreenTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BAA0FEC1BFA193A00D5790F /* Dimil'sWeatherScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8BAA10231BFA420700D5790F /* Models */,
+				8BAA10201BFA395C00D5790F /* Resources */,
+				8BAA10191BFA315400D5790F /* ImageCache */,
+				8BAA0FF11BFA193A00D5790F /* AppDelegate.h */,
+				8BAA0FF21BFA193A00D5790F /* AppDelegate.m */,
+				8BAA0FF71BFA193A00D5790F /* WeatherViewController.h */,
+				8BAA0FF81BFA193A00D5790F /* WeatherViewController.m */,
+				8BAA10161BFA1D2100D5790F /* WeatherCollectionViewCell.h */,
+				8BAA10171BFA1D2100D5790F /* WeatherCollectionViewCell.m */,
+				8BAA10271BFA431300D5790F /* WeatherDataBase.h */,
+				8BAA10281BFA431300D5790F /* WeatherDataBase.m */,
+				8BAA102A1BFAEA6500D5790F /* NSString+Formatter.h */,
+				8BAA102B1BFAEA6500D5790F /* NSString+Formatter.m */,
+				8BAA0FFA1BFA193A00D5790F /* Main.storyboard */,
+				8BAA0FFD1BFA193A00D5790F /* Images.xcassets */,
+				8BAA0FFF1BFA193B00D5790F /* LaunchScreen.xib */,
+				8BAA0FF41BFA193A00D5790F /* Dimil_sWeatherScreen.xcdatamodeld */,
+				8BAA0FED1BFA193A00D5790F /* Supporting Files */,
+			);
+			path = "Dimil'sWeatherScreen";
+			sourceTree = "<group>";
+		};
+		8BAA0FED1BFA193A00D5790F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BAA0FEE1BFA193A00D5790F /* Info.plist */,
+				8BAA0FEF1BFA193A00D5790F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BAA10091BFA193B00D5790F /* Dimil'sWeatherScreenTests */ = {
+			isa = PBXGroup;
+			children = (
+				8BAA100C1BFA193B00D5790F /* Dimil_sWeatherScreenTests.m */,
+				8BAA100A1BFA193B00D5790F /* Supporting Files */,
+			);
+			path = "Dimil'sWeatherScreenTests";
+			sourceTree = "<group>";
+		};
+		8BAA100A1BFA193B00D5790F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BAA100B1BFA193B00D5790F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BAA10191BFA315400D5790F /* ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				8BAA101A1BFA315400D5790F /* ImageDownloader.h */,
+				8BAA101B1BFA315400D5790F /* ImageDownloader.m */,
+				8BAA101C1BFA315400D5790F /* ImageCache.h */,
+				8BAA101D1BFA315400D5790F /* ImageCache.m */,
+			);
+			path = ImageCache;
+			sourceTree = "<group>";
+		};
+		8BAA10201BFA395C00D5790F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8BAA10211BFA395C00D5790F /* cloud.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8BAA10231BFA420700D5790F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8BAA10241BFA422100D5790F /* WeatherData.h */,
+				8BAA10251BFA422100D5790F /* WeatherData.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BAA0FE91BFA193A00D5790F /* Dimil'sWeatherScreen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BAA10101BFA193B00D5790F /* Build configuration list for PBXNativeTarget "Dimil'sWeatherScreen" */;
+			buildPhases = (
+				8BAA0FE61BFA193A00D5790F /* Sources */,
+				8BAA0FE71BFA193A00D5790F /* Frameworks */,
+				8BAA0FE81BFA193A00D5790F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dimil'sWeatherScreen";
+			productName = "Dimil'sWeatherScreen";
+			productReference = 8BAA0FEA1BFA193A00D5790F /* Dimil'sWeatherScreen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8BAA10051BFA193B00D5790F /* Dimil'sWeatherScreenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BAA10131BFA193B00D5790F /* Build configuration list for PBXNativeTarget "Dimil'sWeatherScreenTests" */;
+			buildPhases = (
+				8BAA10021BFA193B00D5790F /* Sources */,
+				8BAA10031BFA193B00D5790F /* Frameworks */,
+				8BAA10041BFA193B00D5790F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BAA10081BFA193B00D5790F /* PBXTargetDependency */,
+			);
+			name = "Dimil'sWeatherScreenTests";
+			productName = "Dimil'sWeatherScreenTests";
+			productReference = 8BAA10061BFA193B00D5790F /* Dimil'sWeatherScreenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BAA0FE21BFA193A00D5790F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = DTM;
+				TargetAttributes = {
+					8BAA0FE91BFA193A00D5790F = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					8BAA10051BFA193B00D5790F = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 8BAA0FE91BFA193A00D5790F;
+					};
+				};
+			};
+			buildConfigurationList = 8BAA0FE51BFA193A00D5790F /* Build configuration list for PBXProject "Dimil'sWeatherScreen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BAA0FE11BFA193A00D5790F;
+			productRefGroup = 8BAA0FEB1BFA193A00D5790F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BAA0FE91BFA193A00D5790F /* Dimil'sWeatherScreen */,
+				8BAA10051BFA193B00D5790F /* Dimil'sWeatherScreenTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BAA0FE81BFA193A00D5790F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BAA0FFC1BFA193A00D5790F /* Main.storyboard in Resources */,
+				8BAA10011BFA193B00D5790F /* LaunchScreen.xib in Resources */,
+				8BAA0FFE1BFA193A00D5790F /* Images.xcassets in Resources */,
+				8BAA10221BFA395C00D5790F /* cloud.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BAA10041BFA193B00D5790F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BAA0FE61BFA193A00D5790F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BAA0FF31BFA193A00D5790F /* AppDelegate.m in Sources */,
+				8BAA0FF61BFA193A00D5790F /* Dimil_sWeatherScreen.xcdatamodeld in Sources */,
+				8BAA10261BFA422100D5790F /* WeatherData.m in Sources */,
+				8BAA101F1BFA315400D5790F /* ImageCache.m in Sources */,
+				8BAA10291BFA431300D5790F /* WeatherDataBase.m in Sources */,
+				8BAA0FF91BFA193A00D5790F /* WeatherViewController.m in Sources */,
+				8BAA102C1BFAEA6500D5790F /* NSString+Formatter.m in Sources */,
+				8BAA0FF01BFA193A00D5790F /* main.m in Sources */,
+				8BAA10181BFA1D2100D5790F /* WeatherCollectionViewCell.m in Sources */,
+				8BAA101E1BFA315400D5790F /* ImageDownloader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BAA10021BFA193B00D5790F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BAA100D1BFA193B00D5790F /* Dimil_sWeatherScreenTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BAA10081BFA193B00D5790F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BAA0FE91BFA193A00D5790F /* Dimil'sWeatherScreen */;
+			targetProxy = 8BAA10071BFA193B00D5790F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8BAA0FFA1BFA193A00D5790F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BAA0FFB1BFA193A00D5790F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8BAA0FFF1BFA193B00D5790F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BAA10001BFA193B00D5790F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BAA100E1BFA193B00D5790F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8BAA100F1BFA193B00D5790F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BAA10111BFA193B00D5790F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Dimil'sWeatherScreen/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8BAA10121BFA193B00D5790F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Dimil'sWeatherScreen/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8BAA10141BFA193B00D5790F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Dimil'sWeatherScreenTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dimil'sWeatherScreen.app/Dimil'sWeatherScreen";
+			};
+			name = Debug;
+		};
+		8BAA10151BFA193B00D5790F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Dimil'sWeatherScreenTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dimil'sWeatherScreen.app/Dimil'sWeatherScreen";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BAA0FE51BFA193A00D5790F /* Build configuration list for PBXProject "Dimil'sWeatherScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BAA100E1BFA193B00D5790F /* Debug */,
+				8BAA100F1BFA193B00D5790F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BAA10101BFA193B00D5790F /* Build configuration list for PBXNativeTarget "Dimil'sWeatherScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BAA10111BFA193B00D5790F /* Debug */,
+				8BAA10121BFA193B00D5790F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BAA10131BFA193B00D5790F /* Build configuration list for PBXNativeTarget "Dimil'sWeatherScreenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BAA10141BFA193B00D5790F /* Debug */,
+				8BAA10151BFA193B00D5790F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8BAA0FF41BFA193A00D5790F /* Dimil_sWeatherScreen.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8BAA0FF51BFA193A00D5790F /* Dimil_sWeatherScreen.xcdatamodel */,
+			);
+			currentVersion = 8BAA0FF51BFA193A00D5790F /* Dimil_sWeatherScreen.xcdatamodel */;
+			path = Dimil_sWeatherScreen.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8BAA0FE21BFA193A00D5790F /* Project object */;
+}
